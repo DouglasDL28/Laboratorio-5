@@ -1,4 +1,4 @@
-package Lots
+package Maps
 
 class Lot(
         val Xaxis: Int,

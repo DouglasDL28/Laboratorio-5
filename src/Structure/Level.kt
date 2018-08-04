@@ -1,6 +1,6 @@
 package Structure
 
-import Cars.Car
+import Maps.Car
 import Maps.Map
 
 class Level (

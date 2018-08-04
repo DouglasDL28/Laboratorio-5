@@ -1,4 +1,4 @@
-package Obstacle
+package Maps
 
 class Obstacle (
         val Xaxis: Int,

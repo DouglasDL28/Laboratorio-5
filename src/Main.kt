@@ -1,11 +1,7 @@
 package main
 
-import Cars.Car
-import Lots.Lot
-import Maps.Map
-import Obstacle.Obstacle
-import Structure.Level
-import Structure.Parking
+import Maps.Car
+import Maps.Lot
 
 fun main(args: Array<String>){
 
@@ -13,7 +9,7 @@ fun main(args: Array<String>){
 
     println(newCar.plate)
 
-    val newLot = Lot(2,4,"v")
+    val newLot = Lot(2, 4, "v")
 
     println(newLot)
 

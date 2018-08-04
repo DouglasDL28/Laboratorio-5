@@ -1,4 +1,4 @@
-package Cars
+package Maps
 
 class Car (
         val plate: String

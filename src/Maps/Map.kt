@@ -1,8 +1,5 @@
 package Maps
 
-import Cars.Car
-import Lots.Lot
-import Obstacle.Obstacle
 import java.util.ArrayList
 
 class Map (
