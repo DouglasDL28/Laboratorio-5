@@ -1,11 +1,23 @@
 package Maps
 
 class Lot(
-        val Xaxis: Int,
-        val Yaxis: Int,
-        val ID: String
+        private val Xaxis: Int,
+        private val Yaxis: Int,
+        private val ID: String
 )
 {
+    fun getX ():Int {
+        return Xaxis
+    }
+
+    fun getY ():Int {
+        return Yaxis
+    }
+
+    fun getID (): String {
+        return ID
+    }
+
     override fun toString(): String {
         return "$ID"
     }
