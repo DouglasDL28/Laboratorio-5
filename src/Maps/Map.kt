@@ -112,13 +112,13 @@ class Map (
         var result: String = ""
         for (x in 0..this.height) {
             for (y in 0..this.width) {
-                if (hasCarAt(x,y)) {
+                if (hasLotAt(x,y) && hasCarAt(x,y)){
                     val car = getCarAt(x,y)
                     result += car
-                } else if (hasLotAt(x,y)){
+                }else if (!hasCarAt(x,y) && hasLotAt(x,y)) {
                     val lot = getLotAt(x,y)
                     result += lot
-                } else if (hasObstacleAt(x,y)){
+                }else if (hasObstacleAt(x,y)){
                     val obstacle = getObstacleAt(x,y)
                     result += obstacle
                 } else {

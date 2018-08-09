@@ -105,7 +105,6 @@ fun main(args: Array<String>){
                     val levelID = readLine()!!.toInt()
                     myParking.deleteLevel(levelID)
                     println("El nivel se ha eliminado con éxito.")
-
                 }
 
                 3 -> {
@@ -140,8 +139,6 @@ fun main(args: Array<String>){
                         } else{
                             print("El estacionamiento ingresado no es válido")
                         }
-
-
 
                     }
 
