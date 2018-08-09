@@ -4,9 +4,10 @@ import Maps.Car
 import Maps.Lot
 import Maps.Map
 import Maps.Obstacle
+import Structure.Level
+import Structure.Parking
 import java.io.File
 import java.io.FileNotFoundException
-import java.io.StringReader
 
 fun readMap(fileName: String): ArrayList<String> {
     val inputMap = ArrayList<String>()
@@ -20,7 +21,7 @@ fun readMap(fileName: String): ArrayList<String> {
     return inputMap
 }
 
-fun createMap(inputMap: ArrayList<String>, fileName: String): Map? {
+fun createMap(inputMap: ArrayList<String>, fileName: String): Map {
     val myMap = Map(fileName,inputMap[0].length, inputMap.size)
     for (row in inputMap.indices) {
         for (column in inputMap[0].indices) {
@@ -41,16 +42,116 @@ fun createMap(inputMap: ArrayList<String>, fileName: String): Map? {
     return myMap
 }
 
+fun menu ():String {
+    return """Menu:
+        |1. Administrador.
+        |2. Conductor.
+        |3. Salir.
+        |
+    """.trimMargin()
+}
+
+fun adminMenu (): String {
+    return """
+        1. Crear nivel.
+        2. Eliminar nivel
+        3. Ver todos los niveles.
+        4. Salir a menú principal.
+
+    """.trimIndent()
+}
+
+fun driverMenu (): String {
+    return """
+        1. Agregar un carro a un nivel.
+        2. Salir a menú principal.
+
+    """.trimIndent()
+}
 
 fun main(args: Array<String>){
+    var wantsToContinue = true
+    val myParking = Parking()
 
-    val fileName = "/Users/douglasdeleon/Documents/TestLvl.txt"
+    do{
+        println(menu())
+        print("Ingrese una opción: ")
+        val option = readLine()!!.toInt()
 
-    var inputMap = readMap(fileName)
+        when (option){
+            1 -> {
+                println(adminMenu())
+            print("Ingrese una opcion: ")
+            val opcionAdmin = readLine()!!.toInt()
+            when (opcionAdmin){
+                1 -> {
+                    print("Ingrese el nombre del nivel que desea agregar: ")
+                    val nombre = readLine()!!
+                    print("Ingrese el ID del nivel: ")
+                    val ID = readLine()!!.toInt()
+                    print("Ingrese el color asignado al nivel: ")
+                    val color = readLine()!!
+                    print ("Ingrese el archivo del mapa del nivel: ")
+                    val mapFile = readLine()!!
 
-    val lvlMap = createMap(inputMap, fileName)
+                    val inputMap = readMap(mapFile)
+                    val levelMap = createMap(inputMap, mapFile)
+                    val newLevel = Level(nombre,ID,color, levelMap)
+                    myParking.addLevel(newLevel)
+                }
 
-    print (lvlMap)
+                2 -> {
+                    println("Ingrese el ID del nivel que desea eliminar: ")
+                    val levelID = readLine()!!.toInt()
+                    myParking.deleteLevel(levelID)
+                    println("El nivel se ha eliminado con éxito.")
 
+                }
+
+                3 -> {
+                    println(myParking.getLevelsMenu())
+                }
+
+                4 -> {wantsToContinue = true}
+            }
+            } //Administrador
+
+            2 -> {
+                println(driverMenu())
+                print("Ingrese una opción: ")
+                val driverOption = readLine()!!.toInt()
+
+                when (driverOption){
+                    1 -> {
+                        println(myParking.getLevelsMenu())
+                        print("Ingrese el ID del nivel al cual desea agregarlo: ")
+                        val level = readLine()!!.toInt()
+
+                        print("Ingrese la placa del carro que desea estacionar: ")
+                        val plate = readLine()!!
+
+                        print ("Ingrese el estacionamiento en el cual quiere dejar su carro: ")
+                        val lotID = readLine()!!
+
+                        if(myParking.findLevel(level)!!.map.findLot(lotID) != null) {
+                            val newCar = Car(plate, myParking.findLevel(level)!!.map.findLot(lotID)!!.getX(), myParking.findLevel(level)!!.map.findLot(lotID)!!.getY())
+
+                            myParking.findLevel(level)!!.addCar(newCar)
+                        } else{
+                            print("El estacionamiento ingresado no es válido")
+                        }
+
+
+
+                    }
+
+                    2 -> {wantsToContinue = true}
+                }
+            } //Conductor
+
+            3 -> {wantsToContinue = false} //Salir
+            }
+
+    }while(wantsToContinue)
 
 }

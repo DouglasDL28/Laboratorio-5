@@ -27,8 +27,18 @@ class Parking(
         return result
     }
 
+    fun deleteLevel (ID: Int):Boolean {
+        if (findLevel(ID) != null) {
+            levels.remove(findLevel(ID))
+        }
+        return false
+    }
+
     override fun toString(): String {
-        return "Parking(levels=$levels)"
+        val levelNames = levels.map{it.getName()}.joinToString()
+        return """Parking:
+            |Levels: $levelNames
+        """.trimMargin()
     }
 
 
