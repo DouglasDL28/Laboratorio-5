@@ -42,13 +42,13 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1" />
-          <entry key="Kotlin" value="9513" />
+          <entry key="Kotlin" value="9573" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1" />
-          <entry key="kt" value="9513" />
+          <entry key="kt" value="9573" />
         </counts>
       </usages-collector>
     </session>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Maps/Map.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="n#!!block;n#findCars#0;n#!!block;n#Map#0" />
                 <element signature="n#!!block;n#findLot#0;n#!!block;n#Map#0" />
@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Structure/Level.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="28" />
+            <state relative-caret-position="343">
+              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#19#50#0" expanded="true" />
                 <element signature="n#!!block;n#findCars#0;n#!!block;n#Level#0" />
@@ -134,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="327">
+              <caret line="137" column="75" lean-forward="true" selection-start-line="137" selection-start-column="75" selection-end-line="137" selection-end-column="75" />
               <folding>
                 <element signature="e#14#187#0" expanded="true" />
                 <element signature="n#!!block;n#readMap#0" />
@@ -171,11 +171,11 @@
         <option value="$PROJECT_DIR$/src/Cars/Car.kt" />
         <option value="$PROJECT_DIR$/src/Maps/Obstacle.kt" />
         <option value="$PROJECT_DIR$/../poo2018/rurple/src/edu/uvg/Main.java" />
-        <option value="$PROJECT_DIR$/src/Maps/Map.kt" />
         <option value="$PROJECT_DIR$/src/Structure/Parking.kt" />
         <option value="$PROJECT_DIR$/src/Maps/Lot.kt" />
         <option value="$PROJECT_DIR$/src/Structure/Level.kt" />
         <option value="$PROJECT_DIR$/src/Maps/Car.kt" />
+        <option value="$PROJECT_DIR$/src/Maps/Map.kt" />
         <option value="$PROJECT_DIR$/src/Main.kt" />
       </list>
     </option>
@@ -225,7 +225,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533820126796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533826945371" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -325,11 +325,11 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.32777777" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32777777" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.2180723" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49928468" weight="0.25138888" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49928468" visible="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,10 +488,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maps/Lot.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Maps/Map.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="n#!!block;n#findCars#0;n#!!block;n#Map#0" />
             <element signature="n#!!block;n#findLot#0;n#!!block;n#Map#0" />
@@ -504,17 +511,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maps/Lot.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Structure/Level.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="28" />
+        <state relative-caret-position="343">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#19#50#0" expanded="true" />
             <element signature="n#!!block;n#findCars#0;n#!!block;n#Level#0" />
@@ -537,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="327">
+          <caret line="137" column="75" lean-forward="true" selection-start-line="137" selection-start-column="75" selection-end-line="137" selection-end-column="75" />
           <folding>
             <element signature="e#14#187#0" expanded="true" />
             <element signature="n#!!block;n#readMap#0" />

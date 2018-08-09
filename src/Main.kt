@@ -98,20 +98,18 @@ fun main(args: Array<String>){
                     val levelMap = createMap(inputMap, mapFile)
                     val newLevel = Level(nombre,ID,color, levelMap)
                     myParking.addLevel(newLevel)
-                }
+                } //Crear un nivel.
 
                 2 -> {
                     println("Ingrese el ID del nivel que desea eliminar: ")
                     val levelID = readLine()!!.toInt()
                     myParking.deleteLevel(levelID)
                     println("El nivel se ha eliminado con éxito.")
-                }
+                } //Eliminar un nivel.
 
-                3 -> {
-                    println(myParking.getLevelsMenu())
-                }
+                3 -> { println(myParking.getLevelsMenu()) } //Mostrar niveles.
 
-                4 -> {wantsToContinue = true}
+                4 -> {wantsToContinue = true} //Salir a menú principal
             }
             } //Administrador
 
@@ -135,14 +133,15 @@ fun main(args: Array<String>){
                         if(myParking.findLevel(level)!!.map.findLot(lotID) != null) {
                             val newCar = Car(plate, myParking.findLevel(level)!!.map.findLot(lotID)!!.getX(), myParking.findLevel(level)!!.map.findLot(lotID)!!.getY())
 
+                            myParking.findLevel(level)!!.map.addCar(newCar)
                             myParking.findLevel(level)!!.addCar(newCar)
                         } else{
                             print("El estacionamiento ingresado no es válido")
                         }
 
-                    }
+                    } //Agregar un carro a un nivel.
 
-                    2 -> {wantsToContinue = true}
+                    2 -> {wantsToContinue = true} //Salir a menú principal.
                 }
             } //Conductor
 
